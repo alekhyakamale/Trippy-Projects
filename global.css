@@ -1,0 +1,52 @@
+/* 1. Global Reset & Font Application */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body, input, textarea, button, select {
+  /* This sets the font for the entire project */
+  font-family: 'Lobster Two', serif; 
+  font-weight: 700;
+  font-style: italic;
+  
+  /* Vintage color scheme setup */
+  background-color: #2B213A; /* Deep retro plum/dark background */
+  color: #F9F1CC;            /* Warm cream text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Global Text Shadow Effect for Headers */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+  letter-spacing: 2px;
+  line-height: 1.2;
+  
+  /* This gives all your headings that 3D layered shadow look */
+  text-shadow: 
+    -2px 2px 0px #FFB650,  /* Orange layer */
+    -4px 4px 0px #FF80BF,  /* Pink layer */
+    -6px 6px 0px #6868AC;  /* Blue layer */
+}
+
+/* 3. Global Paragraph Adjustments */
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 65ch; /* Keeps lines easy to read */
+  
+  /* Body text usually looks cleaner without heavy shadows */
+  text-shadow: -1px 1px 0px #FFB650; 
+}
+
+/* 4. Global Button & Link Styling */
+a, button {
+  color: #FFB650;
+  text-decoration: none;
+  font-family: inherit; /* Forces buttons to use the retro font */
+}
+
+a:hover, button:hover {
+  color: #80ff86;
+  cursor: pointer;
+}
