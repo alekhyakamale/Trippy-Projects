@@ -1,27 +1,35 @@
-
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>JS Sandbox</title>
-        <link rel="stylesheet" href="global.css">
-        <link rel="stylesheet" href="style.css">
-        <!-- Include Google Font in your HTML <head> -->
-<link href="https://googleapis.com" rel="stylesheet">
 
-	</head>
-	<body>
-		<div id="clrFlppr">
-            <button class="flpBtn" onclick="handleClick()">Flip color</button>
-        </div>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Sandbox</title>
+	<link rel="stylesheet" href="global.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- Include Google Font in your HTML <head> -->
+	<link href="https://googleapis.com" rel="stylesheet">
 
-		<!-- Script order: polyfills first, then app modules -->
-		<script src="polyfills.js"></script>
-		<script src="CreateStore.js"></script>
-		<script src="components.js"></script>
-		<script src="api.js"></script>
-        <script src="colorFlipper.js"></script>
-	</body>
+</head>
+
+<body>
+	<div id="clrFlppr">
+		<div class="flpBtnClass">
+			<button class="flpBtn" id="cntBtn" onclick="handleIncrement()">Count ++</button>
+			<p id="clrVal">0</p>
+			<button class="flpBtn" id="cntBtn" onclick="handleDecrement()">Count --</button>
+		</div>
+		<div class="flpBtnClass"><button class="flpBtn" onclick="handleClick()">Flip color</button></div>
+
+	</div>
+
+	<!-- Script order: polyfills first, then app modules -->
+	<!-- <script src="polyfills.js"></script>
+	<script src="CreateStore.js"></script>
+	<script src="components.js"></script> -->
+	<script src="api.js"></script>
+	<script src="colorFlipper.js"></script>
+	<script src="counter.js"></script>
+</body>
+
 </html>
-
